@@ -2,4 +2,10 @@
 title: "About Me"
 ---
 
-Why I am awesome. 
+- __Name:__ Alex
+- __Ocupation:__ "Student"
+- __Hobbies:__ Solving biologies hardest questions.
+
+Here is a super cool photo of me with my surfboard. 
+
+![](me_surf.jpg)

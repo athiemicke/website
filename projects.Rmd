@@ -5,14 +5,13 @@ title: "Projects"
 Sometimes I like to do projects and then post them on the internet for the whole world to benefit!
 here's some examples. 
 
-## [Data Visualization in R]
+## [Protein Network dynamics]
 
-- An RMarkdown presentation on the common mistakes made in visualization and how to fix them.
-- Includes a github repo for access to all the code.
-- Look at how high quality my work is, hire and or collaborate with me. 
-
-## [Statistical Plots] 
+- A shiny app that allows you to explore the dynamics of dozens of proteins in their response to hypertonic stress
+- Explore distributions and network connections
 
 
-- Interactive plots of things
-- I can code!
+## [Nutrition info] 
+
+- Vizualize contents of nutrients of different foods against each other
+- Calculate the amount of a nutrient per calorie

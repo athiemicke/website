@@ -1,7 +1,7 @@
 name: "Alex-website"
 output_dir: "."
 navbar:
-  title: "Alex Website"
+  title: "Alex' Website"
   left:
     - text: "Home"
       href: index.html
@@ -9,9 +9,28 @@ navbar:
       href: about.html
     - text: "Projects"    
       href: projects.html  
-      
+    - text: "CV"    
+      href: Alexander_Thiemicke_CV.pdf  
+  right:
+     - icon: fa-envelope
+       href: mailto:alexander.thiemicke@vanderbilt.edu
+     - icon: ai-google-scholar
+       href: https://scholar.google.com/citations?user=zFpLTpgAAAAJ&hl=en  
+     - icon: fa-linkedin
+       href: https://www.linkedin.com/in/alexander-thiemicke/  
+     - icon: fa-orcid
+       href: https://orcid.org/0000-0002-9822-1017 
+     - icon: ai-orcid
+       href: https://orcid.org/0000-0002-9822-1017 
+     - icon: fa-github
+       href: https://github.com/athiemicke 
 
 output:
   html_document:
     theme: flatly
     css: style.css
+    
+    
+    
+    
+  

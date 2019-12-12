@@ -23,6 +23,8 @@ navbar:
        href: https://www.linkedin.com/in/alexander-thiemicke/  
      - icon: fa-researchgate
        href: https://www.researchgate.net/profile/Alexander_Thiemicke 
+     - icon: ai-researchgate
+       href: https://www.researchgate.net/profile/Alexander_Thiemicke 
      - icon: ai-orcid
        href: https://orcid.org/0000-0002-9822-1017 
      - icon: ai-orcid

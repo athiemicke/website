@@ -2,5 +2,5 @@
 title: "Biochemistry meets Data Science"
 ---
 
-Hello, I am Alexander Thiemicke and I am currently a PhD Candidate at Vanderbilt University. I am interested in understanding how cells work.
+Hello, I am Alexander Thiemicke and I am currently a PhD Candidate at [Vanderbilt University](https://www.vanderbilt.edu/). I am interested in understanding how cells work.
 

@@ -5,7 +5,7 @@ title: "Projects"
 Sometimes I like to do projects and then post them on the internet for the whole world to benefit!
 here's some examples. 
 
-## [Gene expression interactive vizualization in shiny](https://athiemicke.com/Project0.html/)
+## [Gene expression interactive vizualization in shiny](https://athiemicke.github.io/website/Project0.html/)
 
 - A shiny app that allows to query the Ferreiro et al. Microarray data set on hyperosmotic stress in MEFs
 - Explore changes in gene expression by GO terms

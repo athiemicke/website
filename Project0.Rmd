@@ -5,6 +5,46 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(GEOquery)
+GSE18320_M <- getGEO('GSE18320', GSEMatrix=T)
+GSE18320 <- getGEO('GSE18320', GSEMatrix=F)
+GSE18320_Minfo <- GSE18320_M$GSE18320_series_matrix.txt.gz
+accessions <- GSE18320_Minfo$geo_accession
+treatments <- GSE18320_Minfo$title
+#load reference information to decode gene names for  probe names
+probe = read.delim("GPL7042.an.txt", comment.char = '#')
+probes <- as.data.frame(probe)
+#turn microarray data in data frame
+datExpr <- exprs(GSE18320_M[[1]])
+datExprdf <- as.data.frame(datExpr)
+names(datExprdf) <- treatments
+library(data.table)
+datExprdf2 <- setDT(datExprdf, keep.rownames = TRUE)[]
+names(datExprdf2)[names(datExprdf2) == 'rn'] <- 'ProbeName' 
+datExprdf3 <- merge(probes, datExprdf2, by='ProbeName')
+SLCs <- datExprdf3
+#GO:0006560 proline metabolic process
+SLCs <- subset(datExprdf3, grepl("0006561", GOTerms))
+#prepare data for plotting
+library(reshape2)
+SLCs2 <- melt(SLCs, id.vars=c('ProbeName', "GeneSymbols",'GeneNames', "GOTerms", 'GemmaIDs', 'NCBIids' ))
+names(SLCs2)[names(SLCs2) == 'variable'] <- 'condition'
+#select conditions
+SLCs3 <- subset(SLCs2, condition=='WT-MEFs_NaCl 100 mM 45’_Rep1' | condition=='WT-MEFs_NaCl 100 mM 45’_Rep2' |
+                  condition=='WT-MEFs_NaCl 100 mM 2h_Rep1' |condition=='WT-MEFs_NaCl 100 mM 2h_Rep2' |
+                  condition=='WT-MEFs_NaCl 100 mM 8h_Rep1' |condition=='WT-MEFs_NaCl 100 mM 8h_Rep2' |
+                  condition=='KO-MEFs_Untreated_Rep1' |condition=='KO-MEFs_Untreated_Rep2' |
+                condition=='WT-MEFs_SB 203580 10 mM 2h + NaCl 100 mM 2h_Rep1' |
+                  condition=='WT-MEFs_SB 203580 10 mM 2h + NaCl 100 mM 2h_Rep2' |
+                  condition=='KO-MEFs_NaCl 100 mM 2h_Rep1' |
+                  condition=='KO-MEFs_NaCl 100 mM 2h_Rep2' 
+                  )
+SLCs3$value[is.na(SLCs3$value)] <- 0
+SLCs3 <- SLCs3[order(SLCs3$value),] 
+highestF <- tail(SLCs3,50)
+highestF1 <- min(highestF$value)
+SLCs3$GeneSymbols[SLCs3$value < highestF1] <- NA
+
 ```
 
 ## R Markdown
@@ -13,16 +53,45 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
-```
-
 ## Including Plots
 
 You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r plotbox, echo=FALSE}
+library(ggplot2)
+library(ggrepel)
+FS=8
+ggplot(SLCs3,aes(condition, value))+
+  geom_point(data=SLCs3, aes(condition, value))+
+
+  geom_boxplot(data=SLCs3, aes(condition, value))+
+  geom_label_repel(aes(label = GeneSymbols),
+                   box.padding   = 0.25,
+                   point.padding = 0.5,
+                   label.size = 0.05,
+                   size        = 3,
+                   segment.color = 'grey50') +
+
+   coord_flip()+
+  theme(
+
+    panel.grid.minor = element_blank(),
+    panel.background = element_rect(fill = NA),
+    panel.grid.major.x = element_line(colour = "black"),
+    panel.grid.minor.x = element_line(colour = "black", linetype = 'dashed'),
+    panel.grid.major.y= element_blank(),
+
+    axis.ticks.x = element_line(colour = 'black', size = 1, linetype = 'solid'),
+    axis.ticks.y = element_line(colour = 'black', size = 1, linetype = 'solid'),
+     axis.text.x = element_text(size=FS, color = 'black',angle = 0, hjust = 0.5, vjust = 0.3),
+    #axis.text.x = element_blank(),
+    axis.text.y = element_text(size=FS, color = 'black'),
+    axis.title.x = element_text(size=FS, color = 'black'),
+    # axis.title.x = element_blank(),
+    axis.title.y = element_text(size=FS, color = 'black'),
+    axis.line = element_line(colour = "black", size = 1, linetype = "solid")) +
+  guides(linetype = guide_legend(override.aes = list(size=0.4)))
+
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

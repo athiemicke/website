@@ -17,18 +17,18 @@ navbar:
   right:
      - icon: fa-envelope
        href: mailto:alexander.thiemicke@vanderbilt.edu
-     - icon: ai-google-scholar
-       href: https://scholar.google.com/citations?user=zFpLTpgAAAAJ&hl=en  
+#     - icon: ai-google-scholar
+#       href: https://scholar.google.com/citations?user=zFpLTpgAAAAJ&hl=en  
      - icon: fa-linkedin
        href: https://www.linkedin.com/in/alexander-thiemicke/  
-     - icon: fa-researchgate
-       href: https://www.researchgate.net/profile/Alexander_Thiemicke 
-     - icon: ai-researchgate
-       href: https://www.researchgate.net/profile/Alexander_Thiemicke 
-     - icon: ai-orcid
-       href: https://orcid.org/0000-0002-9822-1017 
-     - icon: ai-orcid
-       href: https://orcid.org/0000-0002-9822-1017 
+#     - icon: fa-researchgate
+#       href: https://www.researchgate.net/profile/Alexander_Thiemicke 
+#     - icon: ai-researchgate
+#       href: https://www.researchgate.net/profile/Alexander_Thiemicke 
+#     - icon: ai-orcid
+#       href: https://orcid.org/0000-0002-9822-1017 
+#     - icon: ai-orcid
+#       href: https://orcid.org/0000-0002-9822-1017 
      - icon: fa-github
        href: https://github.com/athiemicke 
 

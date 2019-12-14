@@ -1,9 +1,9 @@
 ---
-title: "Gene expression interactive vizualization in shiny"
+title: "Gene expression vizualization"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE,warning = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(GEOquery)
 GSE18320_M <- getGEO('GSE18320', GSEMatrix=T)
@@ -51,29 +51,31 @@ SLCs3$GeneSymbols[SLCs3$value < highestF1] <- NA
 
 When cells are exposed to increased levels of NaCl, they change their gene expression:
 
-```{r plotbox, echo=FALSE}
+```{r plotbox, echo=FALSE,warning = FALSE}
+#,out.height=100,out.width=100
 library(ggplot2)
 library(ggrepel)
-FS=8
+#knitr::opts_chunk$set(fig.width=48, fig.height=32) 
+FS=9
 ggplot(SLCs3,aes(condition, value))+
-  geom_point(data=SLCs3, aes(condition, value))+
+  geom_point(data=SLCs3, aes(condition, value), size=2)+
 
-  geom_boxplot(data=SLCs3, aes(condition, value))+
+  geom_boxplot(data=SLCs3, aes(condition, value), size=1)+
   geom_label_repel(aes(label = GeneSymbols),
                    box.padding   = 0.25,
                    point.padding = 0.5,
                    label.size = 0.05,
                    size        = 3,
                    segment.color = 'grey50') +
-
+ylab('log2 fold change')+
    coord_flip()+
   theme(
 
     panel.grid.minor = element_blank(),
     panel.background = element_rect(fill = NA),
-    panel.grid.major.x = element_line(colour = "black"),
-    panel.grid.minor.x = element_line(colour = "black", linetype = 'dashed'),
-    panel.grid.major.y= element_blank(),
+   # panel.grid.major.x = element_line(colour = "black"),
+    #panel.grid.minor.x = element_line(colour = "black", linetype = 'dashed'),
+    panel.grid.major= element_blank(),
 
     axis.ticks.x = element_line(colour = 'black', size = 1, linetype = 'solid'),
     axis.ticks.y = element_line(colour = 'black', size = 1, linetype = 'solid'),
@@ -82,7 +84,8 @@ ggplot(SLCs3,aes(condition, value))+
     axis.text.y = element_text(size=FS, color = 'black'),
     axis.title.x = element_text(size=FS, color = 'black'),
     # axis.title.x = element_blank(),
-    axis.title.y = element_text(size=FS, color = 'black'),
+   # axis.title.y = element_text(size=FS, color = 'black'),
+     axis.title.y = element_blank(),
     axis.line = element_line(colour = "black", size = 1, linetype = "solid")) +
   guides(linetype = guide_legend(override.aes = list(size=0.4)))
 

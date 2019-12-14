@@ -4,9 +4,10 @@ title: "Projects"
 
 My journey through Data exploration in relation to my PhD project.
 
-## [Gene expression interactive vizualization in shiny](https://athiemicke.github.io/website/Project0.html)
+## [Gene expression vizualization](https://athiemicke.github.io/website/Project0.html)
 
-```
+```{r comments, echo=FALSE,include=FALSE}
+#Gene expression interactive vizualization in shiny
 #- A shiny app that allows to query the Ferreiro et al. Microarray data set on hyperosmotic stress in MEFs
 #- Explore changes in gene expression by GO terms
 ```

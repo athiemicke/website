@@ -6,13 +6,13 @@ My journey through Data exploration in relation to my PhD project.
 
 ## [Gene expression vizualization](https://athiemicke.github.io/website/Project0.html)
 
-```{r comments, echo=FALSE,include=FALSE}
-#Gene expression interactive vizualization in shiny
-#- A shiny app that allows to query the Ferreiro et al. Microarray data set on hyperosmotic stress in MEFs
-#- Explore changes in gene expression by GO terms
-```
 - This project extracts data from [Ferreiro et al.](https://www.ncbi.nlm.nih.gov/pubmed/20187982) in which the authors measured chenges in gene expression of MEF cells in hypertonic stress
 - The data is shown as the  log2 fold change relative to untreated cells
+
+## [Gene expression interactive vizualization in shiny]
+
+- A shiny app that allows to query the [Ferreiro et al.](https://www.ncbi.nlm.nih.gov/pubmed/20187982) Microarray data set on hyperosmotic stress in MEFs
+- Explore changes in gene expression by GO terms
 
 ## [Natural language processing approach to search for hidden information in the scientific literature]
 
@@ -21,7 +21,7 @@ My journey through Data exploration in relation to my PhD project.
 - This means I am looking at biology in a different angle than biologists do
 - In this project I apply this angle and screen throught the fullltext of 1000s of articles that meet specific criteria to unveil hidden results and information
 
-## [Protein Network dynamics]
+## [Protein Network dynamics](https://athiemicke.shinyapps.io/viz_app/)
 
 - A shiny app that allows you to explore the dynamics of dozens of proteins in their response to hypertonic stress
 - Explore distributions and network connections

@@ -11,7 +11,7 @@
 
 
 
-<title>About Me</title>
+<title>Gene expression vizualization</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -314,22 +314,23 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div class="fluid-row" id="section-header">
 
 
 
-<h1 class="title toc-ignore">About Me</h1>
+<h1 class="title toc-ignore">Gene expression vizualization</h1>
 
 </div>
 
 
-<ul>
-<li><strong>Name:</strong> Alex</li>
-<li><strong>Ocupation:</strong> “Student”</li>
-<li><strong>Hobbies:</strong> Solving biologies hardest questions.</li>
-</ul>
-<p>Here is a super cool photo of me with my surfboard.</p>
-<p><img src="me_surf.jpg" /></p>
+<div id="section-cells-in-hypertonic-stress-change-gene-expression" class="section level2">
+<h2>Cells in hypertonic stress change gene expression</h2>
+<p>When cells are exposed to increased levels of NaCl, they change their gene expression:</p>
+<p><div class="form-group shiny-input-container">
+<label class="control-label" for="GO">Please enter a GO term number</label>
+<input id="GO" type="text" class="form-control" value="1903047"/>
+</div><button id="save" type="button" class="btn btn-default action-button">Add</button><div id="outc27eb363df30339a" class="shiny-plot-output" style="width: 100% ; height: 400px"></div></p>
+</div>
 
 
 
@@ -353,7 +354,7 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function () {
-  window.buildTabsets("TOC");
+  window.buildTabsets("section-TOC");
 });
 
 $(document).ready(function () {

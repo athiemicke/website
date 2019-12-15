@@ -9,7 +9,7 @@ My journey through Data exploration in relation to my PhD project.
 - This project extracts data from [Ferreiro et al.](https://www.ncbi.nlm.nih.gov/pubmed/20187982) in which the authors measured chenges in gene expression of MEF cells in hypertonic stress
 - The data is shown as the  log2 fold change relative to untreated cells
 
-## [Gene expression interactive vizualization in shiny]
+## [Gene expression interactive vizualization in shiny](https://athiemicke.shinyapps.io/microarray_deploy2/)
 
 - A shiny app that allows to query the [Ferreiro et al.](https://www.ncbi.nlm.nih.gov/pubmed/20187982) Microarray data set on hyperosmotic stress in MEFs
 - Explore changes in gene expression by GO terms

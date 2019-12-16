@@ -31,7 +31,7 @@ My journey through Data exploration in relation to my PhD project.
 - A combined dataset of hospice, census and cancer data
 - We applied machine learning algorhitms to uncover hidden trends and connections
 
-## [Nutrition info] 
+## [Nutrition info](https://athiemicke.shinyapps.io/nutrition2/)
 
 - Vizualize contents of nutrients of different foods against each other
 - Calculate the amount of a nutrient per calorie

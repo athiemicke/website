@@ -8,4 +8,4 @@ title: "About Me"
 
 Here is a super cool photo of me with my surfboard. 
 
-![](me_surf.jpg)
+![](mg_7897-web.jpg)

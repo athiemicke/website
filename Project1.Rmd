@@ -2,5 +2,7 @@
 title: "Natural language processing approach to search for hidden information in the scientific literature"
 ---
 
+There are about 30 million articles listed in Pubmed and every year there are about 500,000 more added with increasing tendency. Keeping an overview across different biomedical fields remains challenging. Fortunately, the expansion in the scientific literature is accompanied by the the development of programmatic tools to access, screen and structure the increasing 
+
 
 ## [Natural language processing approach to search for hidden information in the scientific literature]

@@ -17,7 +17,7 @@ I was fortunate to have the ooprotunity to learn about data analysis and data sc
 - This means I am looking at biology in a different angle than biologists do
 - In this project I apply this angle and screen throught the fullltext of 1000s of articles that meet specific criteria to unveil hidden results and information
 
-## [Protein Network dynamics](https://athiemicke.github.io/website/Project2.html)(https://athiemicke.shinyapps.io/viz_app/)
+## [Protein Network dynamics](https://athiemicke.github.io/website/Project2.html)
 
 - A shiny app that allows you to explore the dynamics of dozens of proteins in their response to hypertonic stress
 - Explore distributions and network connections
@@ -27,7 +27,7 @@ I was fortunate to have the ooprotunity to learn about data analysis and data sc
 - A combined dataset of hospice, census and cancer data
 - We applied machine learning algorhitms to uncover hidden trends and connections
 
-## [Nutrition info](https://athiemicke.github.io/website/Project4.html)(https://athiemicke.shinyapps.io/nutrition2/)
+## [Nutrition info](https://athiemicke.github.io/website/Project4.html)
 
 - Vizualize contents of nutrients of different foods against each other
 - Calculate the amount of a nutrient per calorie

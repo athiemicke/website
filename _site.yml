@@ -6,8 +6,8 @@ head:
 navbar:
   title: "Alexander Thiemicke"
   left:
-    - text: "Home"
-      href: about.html
+    - text: "About"
+      href: index.html
     - text: "Publications"
       href: publications.html
 #    - text: "About Me"

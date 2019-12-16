@@ -91,4 +91,8 @@ ylab('log2 fold change')+
 
 ```
 
+## [Gene expression interactive vizualization in shiny](https://athiemicke.shinyapps.io/microarray_deploy2/)
+
+The data in the plot above is only a small sample of the data from [Ferreiro et al.](https://www.ncbi.nlm.nih.gov/pubmed/20187982). To be able to access all of the data, I wrote an interactive app that allows to query [gene ontology terms](http://geneontology.org/). Each gene ontology term is represented by the boxplot and individual genes are represented as circles.
+
 

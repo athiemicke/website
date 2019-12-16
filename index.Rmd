@@ -4,7 +4,9 @@ title: "Biochemistry meets Data Science"
 
 Hello, I am Alexander Thiemicke and I am currently a PhD Candidate at [Vanderbilt University](https://www.vanderbilt.edu/) in the [Chemical and Physical Biology PhD Program](https://medschool.vanderbilt.edu/cpb/person/alexander-thiemicke/). I am interested in understanding how cells work.
 
-__Look at how cool this plot is!__
+
+
+
 
 $$Y = \alpha \cdot \cos(X), \alpha = 0,0.1,0.2,...,3$$
 

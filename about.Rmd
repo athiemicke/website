@@ -1,11 +1,12 @@
 ---
-title: "About Me"
+title: "Biochemistry meets Data Science"
 ---
 
-- __Name:__ Alex
-- __Ocupation:__ "Student"
-- __Hobbies:__ Solving biologies hardest questions.
+Hello, I am Alexander Thiemicke and I am currently a PhD Candidate at [Vanderbilt University](https://www.vanderbilt.edu/) in the [Chemical and Physical Biology PhD Program](https://medschool.vanderbilt.edu/cpb/person/alexander-thiemicke/). I am interested in understanding how cells work.
 
-Here is a super cool photo of me with my surfboard. 
+![](mg_7897-web.jpg) 
 
-![](mg_7897-web.jpg)
+
+__How does the environment control cell fate?__
+
+I am interested in understanding how cells sense, integrate and respond to environmental stimulation. During my PhD work I have studied the effect of gradual increases of extracellular stress on cells.

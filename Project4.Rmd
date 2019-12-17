@@ -2,4 +2,4 @@
 title: "Nutrition info"
 ---
 
-## [Nutrition info](https://athiemicke.shinyapps.io/nutrition2/)
+This app(https://athiemicke.shinyapps.io/nutrition2/) allows to vizualize the protein content of different food classes over the kilokalories per 100g. 

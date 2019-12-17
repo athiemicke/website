@@ -5,29 +5,29 @@ title: "Projects"
 I was fortunate to have the ooprotunity to learn about data analysis and data science during my PhD. In the following, I illustrate examples of how I use programming to access data and vizualize it.
 
 
-## [Gene expression vizualization](https://athiemicke.github.io/website/Project0.html)
+## [Gene expression vizualization](https://athiemicke.com/Project0.html)
 
-- This project extracts data from [Ferreiro et al.](https://www.ncbi.nlm.nih.gov/pubmed/20187982) in which the authors measured chenges in gene expression of MEF cells in hypertonic stress
-- The data is shown as the  log2 fold change relative to untreated cells
+- This project uses data from [Ferreiro et al.](https://www.ncbi.nlm.nih.gov/pubmed/20187982) in which the authors measured chenges in gene expression of MEF cells in hypertonic stress
+- The datasets provides an insight into changes in gene expression in mammalian cells over time. 
 
-## [Natural language processing approach to search for hidden information in the scientific literature](https://athiemicke.github.io/website/Project1.html)
+## [Natural language processing approach to search for hidden information in the scientific literature](https://athiemicke.com/Project1.html)
 
 - In this project I applied methods of natural language processing to the scientific literature
-- I am a systems biologist and am interested in behavior of cells in a certain conditions
-- This means I am looking at biology in a different angle than biologists do
+- I am a systems biologist and am interested in behavior of cells in certain conditions
+- This means I am looking at biology in a different angle than most biologists do
 - In this project I apply this angle and screen throught the fullltext of 1000s of articles that meet specific criteria to unveil hidden results and information
 
-## [Protein Network dynamics](https://athiemicke.github.io/website/Project2.html)
+## [Protein Network dynamics](https://athiemicke.com/Project2.html)
 
 - A shiny app that allows you to explore the dynamics of dozens of proteins in their response to hypertonic stress
 - Explore distributions and network connections
 
-## [Machine learning applied to Health care datasets](https://athiemicke.github.io/website/Project3.html)
+## [Machine learning applied to Health care datasets](https://athiemicke.com/Project3.html)
 
 - A combined dataset of hospice, census and cancer data
 - We applied machine learning algorhitms to uncover hidden trends and connections
 
-## [Nutrition info](https://athiemicke.github.io/website/Project4.html)
+## [Nutrition info](https://athiemicke.com/Project4.html)
 
 - Vizualize contents of nutrients of different foods against each other
 - Calculate the amount of a nutrient per calorie

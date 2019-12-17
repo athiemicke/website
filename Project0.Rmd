@@ -24,7 +24,7 @@ names(datExprdf2)[names(datExprdf2) == 'rn'] <- 'ProbeName'
 datExprdf3 <- merge(probes, datExprdf2, by='ProbeName')
 SLCs <- datExprdf3
 #GO:0006560 proline metabolic process
-SLCs <- subset(datExprdf3, grepl("0006561", GOTerms))
+SLCs <- subset(datExprdf3, grepl("0007049", GOTerms))
 #prepare data for plotting
 library(reshape2)
 SLCs2 <- melt(SLCs, id.vars=c('ProbeName', "GeneSymbols",'GeneNames', "GOTerms", 'GemmaIDs', 'NCBIids' ))
@@ -49,7 +49,7 @@ SLCs3$GeneSymbols[SLCs3$value < highestF1] <- NA
 
 ## Cells in hypertonic stress change gene expression
 
-When cells are exposed to increased levels of NaCl, they change their gene expression:
+When cells are exposed to increased levels of NaCl, they change their gene expression. For example GO term #0007049 classifies genes associated with the cell cycle. Each gene ontology term is represented by the boxplot and individual genes are represented as circles:
 
 ```{r plotbox, echo=FALSE,warning = FALSE}
 #,out.height=100,out.width=100
@@ -93,6 +93,6 @@ ylab('log2 fold change')+
 
 ## [Gene expression interactive vizualization in shiny](https://athiemicke.shinyapps.io/microarray_deploy2/)
 
-The data in the plot above is only a small sample of the data from [Ferreiro et al.](https://www.ncbi.nlm.nih.gov/pubmed/20187982). To be able to access all of the data, I wrote an interactive app that allows to query [gene ontology terms](http://geneontology.org/). Each gene ontology term is represented by the boxplot and individual genes are represented as circles.
+The data in the plot above is only a small sample of the data from [Ferreiro et al.](https://www.ncbi.nlm.nih.gov/pubmed/20187982). To be able to access all of the data, I wrote an interactive app that allows to query [gene ontology terms](http://geneontology.org/). 
 
 

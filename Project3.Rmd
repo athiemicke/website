@@ -2,4 +2,4 @@
 title: "Machine learning applied to Health care datasets"
 ---
 
-## [Machine learning applied to Health care datasets]
+This project was undertaken at Vanderbilt University in the frame of the Data Science Essentials class taught by the Nashville Software school.

@@ -12,4 +12,4 @@ In particular, I am interested in understanding how cells sense, integrate and r
 
 ![](f1.jpg) 
 
-In my manuscript[1](https://athiemicke.com/publications.html), I found that gradual increases in hypertonicity send a different signal to the cell than a step-like sudden increses in hypertonicity.
+In my manuscript[[1]](https://athiemicke.com/publications.html), I found that gradual increases in hypertonicity send a different signal to the cell than a step-like sudden increses in hypertonicity.

@@ -1,31 +1,25 @@
----
-title: "Biochemistry meets Data Science"
----
-Hello, I am Alexander Thiemicke and I am currently a PhD Candidate at [Vanderbilt University](https://www.vanderbilt.edu/) in the [Chemical and Physical Biology PhD Program](https://medschool.vanderbilt.edu/cpb/person/alexander-thiemicke/). I am interested in understanding how cells respond to stress in different temporally changing environments.
+# install.packages(c("cowplot", "googleway", "ggplot2", 
+#                    "ggspatial", "libwgeom", "sf", "rnaturalearth", "rnaturalearthdata"))
+# install.packages('libwgeom')
+rm(list = ls())
+library(sf,cowplot,googleway)
+library(ggspatial)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(cowplot)
 
-![](mg_7897-web.jpg) 
-
-
-### How does the environment control cell fate?
-
-In particular, I am interested in understanding how cells sense, integrate and respond to environmental stimulation. In the context of PhD work in the lab of my PhD advisor [Gregor Neuert](https://scholar.google.com/citations?user=k2lm0AIAAAAJ), I study the effect of gradual increases of extracellular stress on cells. I focus on the effect of increasing hypertonicity on cells as recent findings have shown that NaCl induced hypertonicity can play a role in many different tissues and in several diseases.
-
-![](f1.jpg) 
-
-In the manuscript[[1]](https://athiemicke.com/publications.html) I am preparing, I found that gradual increase in hypertonicity sends a different signal to the cell than a step-like sudden increase in hypertonicity.
-
-```{r setup, echo=FALSE,include=FALSE,warning = FALSE}
-library(sf)
+#install.packages('rgeos')
+library(rgeos)
+#install.packages('tools')
+library(tools)
+#install.packages("ggiraph")
+library(ggiraph)
 
 world <- ne_countries(scale = "medium", returnclass = "sf")
-#class(world)
-# states <- st_as_sf(map("state", plot = FALSE, fill = TRUE))
-# states <- cbind(states, st_coordinates(st_centroid(states)))
-# states$ID <- toTitleCase(states$ID)
-
-
-
-
+class(world)
+states <- st_as_sf(map("state", plot = FALSE, fill = TRUE))
+states <- cbind(states, st_coordinates(st_centroid(states)))
+states$ID <- toTitleCase(states$ID)
 
 #Jena 	geo:50.927222,11.586111
 #Oslo 	geo:59.916667,10.733333
@@ -52,9 +46,7 @@ sites <- data.frame(longitude = c(11.586111, 10.733333,-122.272778,-79.976389,-8
   #sprintf("window.open(\"%s%s\")","http://en.wikipedia.org/wiki/", as.character(crimes$state) )
 
 #sites$onclick <-sprintf("window.open(\"%s%s\")",'https://athiemicke.com', '/')
-#sites$onclick <-'https://athiemicke.com'
-sites$onclick <- sprintf("window.open(\"%s%s\")",
-        "http://athiemicke.com/", as.character('projects.html') )
+sites$onclick <-'https://athiemicke.com'
 
 CV_Map <- ggplot(data = world) +
   geom_sf()+
@@ -69,10 +61,10 @@ CV_Map <- ggplot(data = world) +
                    label.size = 0.2,
                    size        = 3,
                    segment.color = 'grey50') +
-  geom_point_interactive(data = sites, aes(x = longitude, y = latitude, color=purpose, fill=purpose
-                                          #, tooltip = Institution
-                                          #, data_id = purpose
-                                          , onclick=onclick
+  geom_point_interactive(data = sites, aes(x = longitude, y = latitude, color=purpose, fill=purpose,
+                                           tooltip = purpose,
+                                           data_id = purpose
+                                          #, onclick=onclick
                                            ), size = 2, 
                          shape = 23) +
   # geom_point(data = sites, aes(x = longitude, y = latitude, color=purpose, fill=purpose), size = 2, 
@@ -95,14 +87,46 @@ CV_Map <- ggplot(data = world) +
        axis.title = element_blank()
        )
 
-# x <- girafe(ggobj = CV_Map)
-# if( interactive() ) print(x)
+x <- girafe(ggobj = CV_Map)
+if( interactive() ) print(x)
 
 
 
-```
 
-I was fortunate to experience different places around the world as part of my professional life. 
-```{r plotbox, echo=FALSE,warning = FALSE}
-girafe(ggobj = CV_Map)
-```
+
+
+install.packages('plotly')
+library(plotly)
+p <- ggplot(data = diamonds, aes(x = cut, fill = clarity)) +
+  geom_bar(position = "dodge")
+ggplotly(p)
+
+
+
+library(ggplot2)
+library(plotly)
+library(htmlwidgets)
+library(htmltools)
+
+myData <- data.frame(
+  x=c(1,2,3), 
+  y=c(3,2,1),
+  label=c("Google", "Bing", "R"),
+  category=c("search", "search", "other"),
+  urls=c("http://google.de", "http://bing.com", "http://r-project.org")
+)
+
+f <- function(p) {
+  ply <- ggplotly(p)
+  
+  javascript <- HTML(paste("
+                           var myPlot = document.getElementById('", ply$elementId, "');
+                           myPlot.on('plotly_click', function(data){
+                           var urls = ", toJSON(split(myData, myData$category)), ";
+                           window.open(urls[data.points[0].data.name][data.points[0].pointNumber]['urls'],'_blank');
+                           });", sep=''))  
+  prependContent(ply, onStaticRenderComplete(javascript))
+}
+
+f(ggplot(myData, aes(x=x, y=y)) + geom_point(aes(text=label, color=category)))
+

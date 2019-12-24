@@ -1,18 +1,19 @@
 ---
 title: "Biochemistry meets Data Science"
 ---
-Hello, I am Alexander Thiemicke and I am currently a PhD Candidate at [Vanderbilt University](https://www.vanderbilt.edu/) in the [Chemical and Physical Biology PhD Program](https://medschool.vanderbilt.edu/cpb/person/alexander-thiemicke/). I am interested in understanding how cells respond to stress in different temporally changing environments.
+Hello, I am Alexander Thiemicke and I am currently a PhD Candidate at [Vanderbilt University](https://www.vanderbilt.edu/) in the [Chemical and Physical Biology PhD Program](https://medschool.vanderbilt.edu/cpb/person/alexander-thiemicke/). I am interested in understanding how cells respond to stimulation in temporally changing environments.
 
 ![](mg_7897-web.jpg) 
 
 
-### How does the environment control cell fate?
+### How do temporal changes of stress in the environment control cell fate?
 
-In particular, I am interested in understanding how cells sense, integrate and respond to environmental stimulation. In the context of PhD work in the lab of my PhD advisor [Gregor Neuert](https://scholar.google.com/citations?user=k2lm0AIAAAAJ), I study the effect of gradual increases of extracellular stress on cells. I focus on the effect of increasing hypertonicity on cells as recent findings have shown that NaCl induced hypertonicity can play a role in many different tissues and in several diseases.
+In particular, I am interested in understanding how cells sense, integrate and respond to environmental stress. In the context of my PhD work in the lab of my PhD advisor [Gregor Neuert](https://scholar.google.com/citations?user=k2lm0AIAAAAJ), I study the effect of gradual increases of extracellular stress on cells. I focus on the effect of increasing hypertonicity on cells a fundamental stress affecting cells in many tissues. Since the existence of life, cells had to cope with changes in extracellular hypertonicity and therefore mechanisms and even pathway components responding to the stress are conserved from bacteria to humans.
 
 ![](f1.jpg) 
 
-In the manuscript[[1]](https://athiemicke.com/publications.html) I am preparing, I found that gradual increase in hypertonicity sends a different signal to the cell than a step-like sudden increase in hypertonicity.
+Currently, I am preparing a manuscript[[1]](https://athiemicke.com/publications.html) in which I describe the results of my studied in human cells. I investigated the effect of dynamically changing NaCl inputs on cellular processes by measuring +35 key markers of cell state.
+
 
 ```{r setup, echo=FALSE,include=FALSE,warning = FALSE}
 library(sf)
@@ -49,9 +50,9 @@ sites <- data.frame(longitude = c(11.586111, 10.733333,-122.272778,-79.976389,-8
                                   'Master Thesis student 2013/14',
                                   'RISE Intern 2011',
                                   'PhD Candidate 2014-2020',
-                                  'CSHL Systtems Immunology 2019\nCSHL Cell Death 2019',
+                                  'CSHL Systems Immunology 2019\nCSHL Cell Death 2019',
                                   'Cell Fate Symposium 2019',
-                                  'Southeastern Immunology 2019\nNSF Computational Modeling Workshop 2019'
+                                  'Southeastern Immunology 2018\nNSF Computational Modeling Workshop 2019'
                                   )
                    #, onclick=sprintf("window.open(\"%s%s\")",'https://athiemicke.com')
                                   
@@ -81,7 +82,7 @@ CV_Map <- ggplot(data = world) +
   geom_point_interactive(data = sites, aes(x = longitude, y = latitude, color=purpose, fill=purpose
                                           , tooltip = explanation
                                           #, data_id = purpose
-                                          , onclick=onclick
+                                          #, onclick=onclick
                                            ), size = 2, 
                          shape = 23) +
   # geom_point(data = sites, aes(x = longitude, y = latitude, color=purpose, fill=purpose), size = 2, 
@@ -111,7 +112,7 @@ CV_Map <- ggplot(data = world) +
 
 ```
 
-I was fortunate to experience different places around the world as part of my professional life. 
+During the course of my studies, I always seeked the opportunity to explore different places. I have been fortunate to study, work and present my research at various institutions and in different countries. The map below indicates, where I did some of my work. By hovering over the locations, you can see when and for what reason I was at each location:
 ```{r plotbox, echo=FALSE,warning = FALSE}
 girafe(ggobj = CV_Map)
 ```

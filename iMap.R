@@ -2,7 +2,9 @@
 #                    "ggspatial", "libwgeom", "sf", "rnaturalearth", "rnaturalearthdata"))
 # install.packages('libwgeom')
 rm(list = ls())
-library(sf,cowplot,googleway)
+library(googleway)
+library(sf)
+library(cowplot)
 library(ggspatial)
 library(rnaturalearth)
 library(rnaturalearthdata)
@@ -14,6 +16,7 @@ library(rgeos)
 library(tools)
 #install.packages("ggiraph")
 library(ggiraph)
+library(ggrepel)
 
 world <- ne_countries(scale = "medium", returnclass = "sf")
 class(world)
@@ -37,7 +40,16 @@ sites <- data.frame(longitude = c(11.586111, 10.733333,-122.272778,-79.976389,-8
                                'Presentation', 'Presentation'),
                     Institution=c('Friedrich-Schiller-University Jena','University of Oslo','UC Berkeley',
                                   'University of Pittsburgh', 'Vanderbilt University', 'Cold Spring Harbor',
-                                  'UC Irvine','UA Birmingham')
+                                  'UC Irvine','UA Birmingham'),
+                    explanation=c('Bachelor of Science 2011\nMaster of Science 2014', 
+                                  'Erasmus exchange 2010', 
+                                  'Master Thesis student 2013/14',
+                                  'RISE Intern 2011',
+                                  'PhD Candidate 2014-2020',
+                                  'CSHL Systtems Immunology 2019\nCSHL Cell Death 2019',
+                                  'Cell Fate Symposium 2019',
+                                  'Southeastern Immunology 2018\nNSF Computational Modeling Workshop 2019'
+                                  )
                    #, onclick=sprintf("window.open(\"%s%s\")",'https://athiemicke.com')
                                   
 )
@@ -47,6 +59,8 @@ sites <- data.frame(longitude = c(11.586111, 10.733333,-122.272778,-79.976389,-8
 
 #sites$onclick <-sprintf("window.open(\"%s%s\")",'https://athiemicke.com', '/')
 sites$onclick <-'https://athiemicke.com'
+sites$onclick <- sprintf("window.open(\"%s%s\")",
+        "http://athiemicke.com/", as.character('projects.html') )
 
 CV_Map <- ggplot(data = world) +
   geom_sf()+
@@ -61,10 +75,10 @@ CV_Map <- ggplot(data = world) +
                    label.size = 0.2,
                    size        = 3,
                    segment.color = 'grey50') +
-  geom_point_interactive(data = sites, aes(x = longitude, y = latitude, color=purpose, fill=purpose,
-                                           tooltip = purpose,
-                                           data_id = purpose
-                                          #, onclick=onclick
+  geom_point_interactive(data = sites, aes(x = longitude, y = latitude, color=purpose, fill=purpose
+                                          , tooltip = explanation
+                                          #, data_id = purpose
+                                          , onclick=onclick
                                            ), size = 2, 
                          shape = 23) +
   # geom_point(data = sites, aes(x = longitude, y = latitude, color=purpose, fill=purpose), size = 2, 
@@ -92,7 +106,7 @@ if( interactive() ) print(x)
 
 
 
-
+###################
 
 
 install.packages('plotly')

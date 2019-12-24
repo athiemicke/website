@@ -32,12 +32,12 @@ names(SLCs2)[names(SLCs2) == 'variable'] <- 'condition'
 #select conditions
 SLCs3 <- subset(SLCs2, condition=='WT-MEFs_NaCl 100 mM 45’_Rep1' | condition=='WT-MEFs_NaCl 100 mM 45’_Rep2' |
                   condition=='WT-MEFs_NaCl 100 mM 2h_Rep1' |condition=='WT-MEFs_NaCl 100 mM 2h_Rep2' |
-                  condition=='WT-MEFs_NaCl 100 mM 8h_Rep1' |condition=='WT-MEFs_NaCl 100 mM 8h_Rep2' |
-                  condition=='KO-MEFs_Untreated_Rep1' |condition=='KO-MEFs_Untreated_Rep2' |
-                condition=='WT-MEFs_SB 203580 10 mM 2h + NaCl 100 mM 2h_Rep1' |
-                  condition=='WT-MEFs_SB 203580 10 mM 2h + NaCl 100 mM 2h_Rep2' |
-                  condition=='KO-MEFs_NaCl 100 mM 2h_Rep1' |
-                  condition=='KO-MEFs_NaCl 100 mM 2h_Rep2' 
+                  condition=='WT-MEFs_NaCl 100 mM 8h_Rep1' |condition=='WT-MEFs_NaCl 100 mM 8h_Rep2' 
+                #|  condition=='KO-MEFs_Untreated_Rep1' |condition=='KO-MEFs_Untreated_Rep2' |
+               # condition=='WT-MEFs_SB 203580 10 mM 2h + NaCl 100 mM 2h_Rep1' |
+                #  condition=='WT-MEFs_SB 203580 10 mM 2h + NaCl 100 mM 2h_Rep2' |
+                 # condition=='KO-MEFs_NaCl 100 mM 2h_Rep1' |
+                  #condition=='KO-MEFs_NaCl 100 mM 2h_Rep2' 
                   )
 SLCs3$value[is.na(SLCs3$value)] <- 0
 SLCs3 <- SLCs3[order(SLCs3$value),] 
@@ -49,7 +49,7 @@ SLCs3$GeneSymbols[SLCs3$value < highestF1] <- NA
 
 ## Cells in hypertonic stress change gene expression
 
-When cells are exposed to increased levels of NaCl, they change their gene expression. For example GO term #0007049 classifies genes associated with the cell cycle. Each gene ontology term is represented by the boxplot and individual genes are represented as circles:
+An underexplored resource are publicly available datasets. Often there is information hidden in these datasets that has either not been identified by or not been of interest to the original authors. As systems biologist, I not only look at biological systems at a different angle, but also aim to use available information as comprehensive as possible to answer open biological questions. This data from [Ferreiro et al.](https://www.ncbi.nlm.nih.gov/pubmed/20187982) aimed to understand how p38 changes the gene expression over time in murine embryonic fibroblasts (MEFs). For example GO term #0007049 classifies genes associated with the cell cycle. Each gene ontology term is represented by the boxplot and individual genes are represented as circles:
 
 ```{r plotbox, echo=FALSE,warning = FALSE}
 #,out.height=100,out.width=100
@@ -93,6 +93,6 @@ ylab('log2 fold change')+
 
 ## [Gene expression interactive vizualization in shiny](https://athiemicke.shinyapps.io/microarray_deploy2/)
 
-The data in the plot above is only a small sample of the data from [Ferreiro et al.](https://www.ncbi.nlm.nih.gov/pubmed/20187982). To be able to access all of the data, I wrote an interactive app that allows to query [gene ontology terms](http://geneontology.org/). 
+The data in the plot above is only a small sample of the data from [Ferreiro et al.](https://www.ncbi.nlm.nih.gov/pubmed/20187982). To be able to access all of the data, I wrote an interactive app that allows to query [gene ontology terms](http://geneontology.org/) in this dataset. 
 
 

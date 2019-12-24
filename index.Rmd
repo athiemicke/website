@@ -1,7 +1,11 @@
 ---
-#title: "Biochemistry meets Data Science"
+#title: "Biochemist, Systems Biologist and Data Scientist"
 ---
-Hello, I am Alexander Thiemicke and I am currently a PhD Candidate at [Vanderbilt University](https://www.vanderbilt.edu/) in the [Chemical and Physical Biology PhD Program](https://medschool.vanderbilt.edu/cpb/person/alexander-thiemicke/). I am interested in understanding how cells respond to stimulation in temporally changing environments.
+
+
+
+
+Hello, I am currently a PhD Candidate at [Vanderbilt University](https://www.vanderbilt.edu/) in the [Chemical and Physical Biology PhD Program](https://medschool.vanderbilt.edu/cpb/person/alexander-thiemicke/). I am interested in understanding how cells respond to stimulation in temporally changing environments.
 
 ![](mg_7897-web.jpg) 
 
@@ -12,7 +16,7 @@ In particular, I am interested in understanding how cells sense, integrate and r
 
 ![](f1.jpg) 
 
-Currently, I am preparing a manuscript[[1]](https://athiemicke.com/publications.html) in which I describe the results of my studied in human cells. I investigated the effect of dynamically changing NaCl inputs on cellular processes by measuring +35 key markers of cell state.
+Currently, I am preparing a manuscript[[1]](https://athiemicke.com/publications.html) in which I describe the results of my studies in human cells. I investigated the effect of dynamically changing NaCl inputs on cellular processes by measuring the expression and activation of +35 key markers of cell state and the concentration change of intracellular metabolites.
 
 
 ```{r setup, echo=FALSE,include=FALSE,warning = FALSE}

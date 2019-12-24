@@ -1,5 +1,5 @@
 ---
-title: "Biochemistry meets Data Science"
+#title: "Biochemistry meets Data Science"
 ---
 Hello, I am Alexander Thiemicke and I am currently a PhD Candidate at [Vanderbilt University](https://www.vanderbilt.edu/) in the [Chemical and Physical Biology PhD Program](https://medschool.vanderbilt.edu/cpb/person/alexander-thiemicke/). I am interested in understanding how cells respond to stimulation in temporally changing environments.
 
@@ -45,7 +45,7 @@ sites <- data.frame(longitude = c(11.586111, 10.733333,-122.272778,-79.976389,-8
                     Institution=c('Friedrich-Schiller-University Jena','University of Oslo','UC Berkeley',
                                   'University of Pittsburgh', 'Vanderbilt University', 'Cold Spring Harbor',
                                   'UC Irvine','UA Birmingham'),
-                    explanation=c('Bachelor of Science 2011\nMaster of Science 2014', 
+                    explanation=c('Bachelor of Science 2008-2011\nMaster of Science 2011-2014', 
                                   'Erasmus exchange 2010', 
                                   'Master Thesis student 2013/14',
                                   'RISE Intern 2011',

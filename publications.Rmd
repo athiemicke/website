@@ -7,7 +7,7 @@ library(fontawesome)
 
 ## `r fa("book", fill = "steelblue")` Working Manuscripts in preparation
 
-[1] **Thiemicke A**, Neuert G. 2019 [in preparation] 
+[1] **Thiemicke A**, Neuert G. 2020 [in preparation] 
 [Temporal perturbations of stress reveal proline accumulation as a protective mechanism in human stress response.]
 
 [2] Johnson A, Li G, Jashnsaz H, **Thiemicke A**, Kesler B, Rogers D, Neuert G. 2019 [in review]

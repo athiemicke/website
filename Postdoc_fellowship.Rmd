@@ -1,12 +1,11 @@
 ---
-title: "Postdoc fellowships"
+title: "Postdoctoral fellowships"
 output:
   html_document:
     df_print: paged
   pdf_document: default
 ---
 
-This is a list of postdoctoral fellowships for international postdocs in the USA. Each fellowship is scored by suitability, amount of awards, funding, allowance and duration. The score is scaled based on the highest value for each category.
 
 
 ```{r setup, echo=FALSE,include=FALSE,warning = FALSE}
@@ -135,12 +134,12 @@ fellow2 <- data.frame('Fellowship'=c('Phrma Foundation',
         'NA','NA','01/03','11/01','NA',
         'NA','NA','01/22','NA','11/12',
         'NA','02/01','NA','09/18'), format="%m/%d")),
-'Suitability'=c(60,100,90,80,20,
-                40,5,70,40,75,
-                90,60,80,25,35,
-                10,85,5,10,10,
-                90,5,90,5,5,
-                20,10,20,85),
+'Suitability'=c(70,100,95,85,25,
+                45,25,75,45,80,
+                95,65,85,35,45,
+                20,90,25,30,30,
+                95,15,95,15,15,
+                30,20,30,90),
 
 'fundingamount' = c(50000,54000,52000,55750,45000,
                     NA,66667,61040,45000,57000,
@@ -212,7 +211,7 @@ fellow2$durationscore <- (100*fellow2$fundingduration)/max(fellow2$fundingdurati
 fellow2$allownacescore <- (100*fellow2$allowance)/max(fellow2$allowance, na.rm = T)
 fellow2$adjAwardsscore <- (100*fellow2$Awards_2019)/max(fellow2$Awards_2019, na.rm = T)
 
-fellow2$score <- round(rowMeans(fellow2[c(7,7,7,15,16,17,18,18,18)], na.rm = T),digits = 2)
+fellow2$score <- round(rowMeans(fellow2[c(7,7,7,7,7,15,16,17,18,18)], na.rm = T),digits = 2)
 
 #fellow2$Deadline[is.na(fellow2$Deadline)] <-0 # as.Date('2020-01-01')
 fellow2_1 <- NULL
@@ -306,6 +305,9 @@ fellow3 %>%
 
 ```
 
+
+This is a list of postdoctoral fellowships for international postdocs in the USA (no citizenship/green card requirement). Each fellowship aims to fund mentored postdoctoral scholars who do biomedical research. I obtained the information about each fellowship from the fellowship website (Fellowship column). The obtained values are Fellowship Sponsor ("Fellowship"), Fellowships awarded in 2019 ("Awards_2019"), main email contact ("contact"), application submission deadline ("Deadline"), letter of intent deadline ("LOI"), a subjective suitability score (ranging from 0 - not suitable to 100 - very suitable) for basic cell cycle related research projects ("Suitability"), the funding amount/year ("fundingamount"), the maximum duration of the fellowship ("fundingduration"), the allowance funding ("allowance") and an overall score ("score", calculate by weighted 50% Suitability score, 30% funding score, 20% Fellowships awarded in 2019 score).  Fields that are 'NA' could not be obtained through the fellowship website.
+The fellowships are ranked by date of deadline, from closest to furthest into the future. The highlighted colors represent the overall score from green (highest score), to yellow (intermeidate score), to red (lowest score).
 
 ```{r plotbox, echo=FALSE,warning = FALSE}
 

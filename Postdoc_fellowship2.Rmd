@@ -259,28 +259,26 @@ my_palette <- colorRampPalette(c("red", "yellow", "green"))(n = 100)
   )
 
 fellow3 %>% 
-  mutate(Fellowship = cell_spec(fellow2_3$Fellowship, "html", link = fellow2_3$truelink #,color='black'
-                                #,background = my_palette[fellow3$score]
-                                ) ,
+  mutate(Fellowship = cell_spec(fellow2_3$Fellowship, "html", link = fellow2_3$truelink,color='black',background = my_palette[fellow3$score]) ,
   #       Fellowship = spec_popover(
   #   content = fellow3$comment,
   #   title = NULL,                           # title will add a Title Panel on top
   #   position = fellow3$comment
   # ),
          score = cell_spec(score,background = my_palette[fellow3$score]),
-       #   contact = cell_spec(contact,background = my_palette[fellow3$score]),
-       #   Awards_2019 = cell_spec(Awards_2019,background = my_palette[fellow3$score]),
-       #   Deadline = cell_spec(Deadline,background = my_palette[fellow3$score]),
-       #   LOI = cell_spec(LOI,background = my_palette[fellow3$score]),
-       #  Suitability = cell_spec(Suitability,background = my_palette[fellow3$score]),
-      #   fundingamount = cell_spec(fundingamount,background = my_palette[fellow3$score]),
-       #  fundingduration = cell_spec(fundingduration,background = my_palette[fellow3$score]),
-       #   allowance = cell_spec(allowance,background = my_palette[fellow3$score]),
+          contact = cell_spec(contact,background = my_palette[fellow3$score]),
+          Awards_2019 = cell_spec(Awards_2019,background = my_palette[fellow3$score]),
+          Deadline = cell_spec(Deadline,background = my_palette[fellow3$score]),
+          LOI = cell_spec(LOI,background = my_palette[fellow3$score]),
+         Suitability = cell_spec(Suitability,background = my_palette[fellow3$score]),
+         fundingamount = cell_spec(fundingamount,background = my_palette[fellow3$score]),
+         fundingduration = cell_spec(fundingduration,background = my_palette[fellow3$score]),
+          allowance = cell_spec(allowance,background = my_palette[fellow3$score]),
 
          
          ) %>%
   kable("html", escape = FALSE) %>%
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = T) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F) %>%
    column_spec(1, bold = T, border_right = T) #%>%
  # cell_spec(score, bold = T, color = "white", background =factor(score, fellow3$score,  my_palette[fellow3$score]))
 

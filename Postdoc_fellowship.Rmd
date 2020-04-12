@@ -269,13 +269,13 @@ fellow3 %>%
   # ),
          score = cell_spec(score,background = my_palette[fellow3$score]),
        #   contact = cell_spec(contact,background = my_palette[fellow3$score]),
-       #   Awards_2019 = cell_spec(Awards_2019,background = my_palette[fellow3$score]),
-       #   Deadline = cell_spec(Deadline,background = my_palette[fellow3$score]),
-       #   LOI = cell_spec(LOI,background = my_palette[fellow3$score]),
-       #  Suitability = cell_spec(Suitability,background = my_palette[fellow3$score]),
-      #   fundingamount = cell_spec(fundingamount,background = my_palette[fellow3$score]),
-       #  fundingduration = cell_spec(fundingduration,background = my_palette[fellow3$score]),
-       #   allowance = cell_spec(allowance,background = my_palette[fellow3$score]),
+          Awards_2019 = cell_spec(Awards_2019,background = my_palette[fellow3$score]),
+          Deadline = cell_spec(Deadline,background = my_palette[fellow3$score]),
+          LOI = cell_spec(LOI,background = my_palette[fellow3$score]),
+         Suitability = cell_spec(Suitability,background = my_palette[fellow3$score]),
+        fundingamount = cell_spec(fundingamount,background = my_palette[fellow3$score]),
+         fundingduration = cell_spec(fundingduration,background = my_palette[fellow3$score]),
+          allowance = cell_spec(allowance,background = my_palette[fellow3$score]),
 
          
          ) %>%

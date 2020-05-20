@@ -10,6 +10,7 @@ output:
 
 ```{r setup, echo=FALSE,include=FALSE,warning = FALSE}
 rm(list = ls())
+#https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
 #install.packages("kableExtra")
 #library(libwgeom)
 #install.packages("googleway")
@@ -42,6 +43,28 @@ library(rvest)
 library(magrittr)
 setwd('~/website')
 fellow <- read.csv('_Postdoc_Funding.csv')
+#potential addtl. fellowships
+#https://www.bwfund.org/programs-offered
+#https://www.fraxa.org/fragile-x-research/grant-application/
+#https://pva.org/research-resources/research-foundation/
+#https://www.daad.org/en/find-funding/phd-postdocs/postdoctoral-researchers-international-mobility-experience-p-r-i-m-e/
+#https://grants.nih.gov/grants/funding/ac_search_results.htm?text_curr=f05&Search.x=0&Search.y=0&Search_Type=Activity
+#https://www.eacr.org/content/jobs.php
+#http://leader.unisannio.it/scholarships.html
+#https://www.embo.org/funding-awards/fellowships/postdoctoral-fellowships#eligibility
+#https://www.embo.org/funding-awards/fellowships/postdoctoral-fellowships/embo-long-term-fellowship-awards
+#https://www.cirm.ca.gov/researchers/funding-opportunities
+#https://www.dfg.de/foerderung/programme/einzelfoerderung/walter_benjamin/index.html
+#https://www.dfg.de/foerderung/programme/einzelfoerderung/forschungsstipendien/
+#https://dceg.cancer.gov/fellowship-training/become-a-fellow/research-training-areas/oeeb-specific-investigators
+#https://www.profellow.com/fellowships/27-postdoctoral-fellowships-in-medicine-and-public-health/
+#https://www.embl.de/training/postdocs/06-funding_opportunities/
+#https://engelhorn-stiftung.de/index.php/stipendium-bewerbung.php deutschsprachiger raum
+#https://www.fritz-thyssen-stiftung.de/foerderung/foerderarten/postdoc-stipendien/
+#https://ec.europa.eu/research/mariecurieactions/actions/individual-fellowships_en
+#https://www.aesnet.org/research/funding%20for%20junior%20investigators/Post-Doctoral%20Research%20Fellowships
+#https://www.dfg.de/en/research_funding/programmes/individual/emmy_noether/index.html
+#https://www.toyotafound.or.jp/english/special/2020/
 
 fellow2 <- data.frame('Fellowship'=c('Phrma Foundation',
                                      'Jane Coffins Child',

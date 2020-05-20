@@ -7,6 +7,8 @@ In this project, I aim to identify a suitable postdoc lab. I am focused on 6 are
 rm(list = ls())
 #library(libwgeom)
 #install.packages("googleway")
+library(ggplot2)
+library(scales)
 library(googleway)
 library(purrr)
 library(sf)
@@ -286,21 +288,6 @@ x2 <- girafe(ggobj = CV_Map_west)
 
 
 
-Labs on the East Coast:
-
-```{r plotbox, echo=FALSE,warning = FALSE}
- if( interactive() ) print(x1)
-girafe(ggobj = CV_Map_east) %>%
-  girafe_options(opts_zoom(max = 3))
-```
-
-Labs in California:
-
-```{r plotbox2, echo=FALSE,warning = FALSE}
- if( interactive() ) print(x2)
-girafe(ggobj = CV_Map_west) %>%
-  girafe_options(opts_zoom(max = 3))
-```
 
 Google scholar metrics for each lab:
 
@@ -375,4 +362,19 @@ girafe(ggobj = p) %>%
                  opts_tooltip(use_fill = TRUE))
 ```
 
+Labs on the East Coast:
+
+```{r plotbox, echo=FALSE,warning = FALSE}
+ if( interactive() ) print(x1)
+girafe(ggobj = CV_Map_east) %>%
+  girafe_options(opts_zoom(max = 3))
+```
+
+Labs in California:
+
+```{r plotbox2, echo=FALSE,warning = FALSE}
+ if( interactive() ) print(x2)
+girafe(ggobj = CV_Map_west) %>%
+  girafe_options(opts_zoom(max = 3))
+```
 

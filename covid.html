@@ -329,236 +329,236 @@ $(document).ready(function () {
 ##    tickers =AAPL, NFLX, SPY, GOLD, BRK/B, DIS, CCL, DRI, ZUO, AAL, LULU, DRI, ZM
 ##    Downloading data for benchmark ticker
 ## ^GSPC | yahoo (1|1) | Found cache file
-## AAPL | yahoo (1|13) | Found cache file - Got 100% of valid prices | Nice!
-## NFLX | yahoo (2|13) | Found cache file - Got 100% of valid prices | Looking good!
-## SPY | yahoo (3|13) | Found cache file - Got 100% of valid prices | Got it!
-## GOLD | yahoo (4|13) | Found cache file - Got 100% of valid prices | Looking good!
+## AAPL | yahoo (1|13) | Found cache file - Got 100% of valid prices | Feels good!
+## NFLX | yahoo (2|13) | Found cache file - Got 100% of valid prices | Mas bah tche, que coisa linda!
+## SPY | yahoo (3|13) | Found cache file - Got 100% of valid prices | Nice!
+## GOLD | yahoo (4|13) | Found cache file - Got 100% of valid prices | Feels good!
 ## BRK/B | yahoo (5|13) | Not Cached - Error in download..
-## DIS | yahoo (6|13) | Found cache file - Got 100% of valid prices | Looking good!
-## CCL | yahoo (7|13) | Found cache file - Got 100% of valid prices | OK!
-## DRI | yahoo (8|13) | Found cache file - Got 100% of valid prices | Boa!
-## ZUO | yahoo (9|13) | Found cache file - Got 100% of valid prices | Nice!
-## AAL | yahoo (10|13) | Found cache file - Got 100% of valid prices | Good job!
-## LULU | yahoo (11|13) | Found cache file - Got 100% of valid prices | Feels good!
+## DIS | yahoo (6|13) | Found cache file - Got 100% of valid prices | Got it!
+## CCL | yahoo (7|13) | Found cache file - Got 100% of valid prices | Looking good!
+## DRI | yahoo (8|13) | Found cache file - Got 100% of valid prices | OK!
+## ZUO | yahoo (9|13) | Found cache file - Got 100% of valid prices | OK!
+## AAL | yahoo (10|13) | Found cache file - Got 100% of valid prices | Got it!
+## LULU | yahoo (11|13) | Found cache file - Got 100% of valid prices | Nice!
 ## DRI | yahoo (12|13) | Found cache file - Got 100% of valid prices | OK!
-## ZM | yahoo (13|13) | Found cache file - Got 100% of valid prices | Youre doing good!</code></pre>
+## ZM | yahoo (13|13) | Found cache file - Got 100% of valid prices | Well done!</code></pre>
 <pre><code>## # A tibble: 12 x 6
 ##    ticker src   download.status total.obs perc.benchmark.… threshold.decis…
 ##    &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;               &lt;int&gt;            &lt;dbl&gt; &lt;chr&gt;           
-##  1 AAPL   yahoo OK                     43                1 KEEP            
-##  2 NFLX   yahoo OK                     43                1 KEEP            
-##  3 SPY    yahoo OK                     43                1 KEEP            
-##  4 GOLD   yahoo OK                     43                1 KEEP            
-##  5 DIS    yahoo OK                     43                1 KEEP            
-##  6 CCL    yahoo OK                     43                1 KEEP            
-##  7 DRI    yahoo OK                     43                1 KEEP            
-##  8 ZUO    yahoo OK                     43                1 KEEP            
-##  9 AAL    yahoo OK                     43                1 KEEP            
-## 10 LULU   yahoo OK                     43                1 KEEP            
-## 11 DRI    yahoo OK                     43                1 KEEP            
-## 12 ZM     yahoo OK                     43                1 KEEP</code></pre>
-<pre><code>##     price.close ticker   ref.date rel_change            stockname
-## 1        277.97   AAPL 2020-03-13   0.000000                Apple
-## 2        242.21   AAPL 2020-03-16 -12.864695                Apple
-## 3        252.86   AAPL 2020-03-17  -9.033349                Apple
-## 4        246.67   AAPL 2020-03-18 -11.260209                Apple
-## 5        244.78   AAPL 2020-03-19 -11.940138                Apple
-## 6        229.24   AAPL 2020-03-20 -17.530667                Apple
-## 7        224.37   AAPL 2020-03-23 -19.282658                Apple
-## 8        246.88   AAPL 2020-03-24 -11.184659                Apple
-## 9        245.52   AAPL 2020-03-25 -11.673921                Apple
-## 10       258.44   AAPL 2020-03-26  -7.025938                Apple
-## 11       247.74   AAPL 2020-03-27 -10.875273                Apple
-## 12       254.81   AAPL 2020-03-30  -8.331835                Apple
-## 13       254.29   AAPL 2020-03-31  -8.518908                Apple
-## 14       240.91   AAPL 2020-04-01 -13.332373                Apple
-## 15       244.93   AAPL 2020-04-02 -11.886178                Apple
-## 16       241.41   AAPL 2020-04-03 -13.152497                Apple
-## 17       262.47   AAPL 2020-04-06  -5.576141                Apple
-## 18       259.43   AAPL 2020-04-07  -6.669787                Apple
-## 19       266.07   AAPL 2020-04-08  -4.281035                Apple
-## 20       267.99   AAPL 2020-04-09  -3.590319                Apple
-## 21       267.99   AAPL 2020-04-09  -3.590319                Apple
-## 22       336.30   NFLX 2020-03-13   0.000000              Netflix
-## 23       298.84   NFLX 2020-03-16 -11.138862              Netflix
-## 24       319.75   NFLX 2020-03-17  -4.921198              Netflix
-## 25       315.47   NFLX 2020-03-18  -6.193871              Netflix
-## 26       332.03   NFLX 2020-03-19  -1.269696              Netflix
-## 27       332.83   NFLX 2020-03-20  -1.031817              Netflix
-## 28       360.27   NFLX 2020-03-23   7.127565              Netflix
-## 29       357.32   NFLX 2020-03-24   6.250378              Netflix
-## 30       342.39   NFLX 2020-03-25   1.810891              Netflix
-## 31       362.99   NFLX 2020-03-26   7.936367              Netflix
-## 32       357.12   NFLX 2020-03-27   6.190903              Netflix
-## 33       370.96   NFLX 2020-03-30  10.306275              Netflix
-## 34       375.50   NFLX 2020-03-31  11.656263              Netflix
-## 35       364.08   NFLX 2020-04-01   8.260482              Netflix
-## 36       370.08   NFLX 2020-04-02  10.044603              Netflix
-## 37       361.76   NFLX 2020-04-03   7.570628              Netflix
-## 38       379.96   NFLX 2020-04-06  12.982457              Netflix
-## 39       372.28   NFLX 2020-04-07  10.698785              Netflix
-## 40       371.12   NFLX 2020-04-08  10.353853              Netflix
-## 41       370.72   NFLX 2020-04-09  10.234914              Netflix
-## 42       370.72   NFLX 2020-04-09  10.234914              Netflix
-## 43       269.32    SPY 2020-03-13   0.000000            SP500 ETF
-## 44       239.85    SPY 2020-03-16 -10.942373            SP500 ETF
-## 45       252.80    SPY 2020-03-17  -6.133968            SP500 ETF
-## 46       240.00    SPY 2020-03-18 -10.886680            SP500 ETF
-## 47       240.51    SPY 2020-03-19 -10.697316            SP500 ETF
-## 48       228.80    SPY 2020-03-20 -15.045300            SP500 ETF
-## 49       222.95    SPY 2020-03-23 -17.217440            SP500 ETF
-## 50       243.15    SPY 2020-03-24  -9.717070            SP500 ETF
-## 51       246.79    SPY 2020-03-25  -8.365518            SP500 ETF
-## 52       261.20    SPY 2020-03-26  -3.014999            SP500 ETF
-## 53       253.42    SPY 2020-03-27  -5.903761            SP500 ETF
-## 54       261.65    SPY 2020-03-30  -2.847918            SP500 ETF
-## 55       257.75    SPY 2020-03-31  -4.296007            SP500 ETF
-## 56       246.15    SPY 2020-04-01  -8.603153            SP500 ETF
-## 57       251.83    SPY 2020-04-02  -6.494135            SP500 ETF
-## 58       248.19    SPY 2020-04-03  -7.845687            SP500 ETF
-## 59       264.86    SPY 2020-04-06  -1.656031            SP500 ETF
-## 60       265.13    SPY 2020-04-07  -1.555771            SP500 ETF
-## 61       274.03    SPY 2020-04-08   1.748846            SP500 ETF
-## 62       278.20    SPY 2020-04-09   3.297195            SP500 ETF
-## 63       278.20    SPY 2020-04-09   3.297195            SP500 ETF
-## 64        15.67   GOLD 2020-03-13   0.000000         Barrock Gold
-## 65        16.33   GOLD 2020-03-16   4.211870         Barrock Gold
-## 66        17.71   GOLD 2020-03-17  13.018500         Barrock Gold
-## 67        15.88   GOLD 2020-03-18   1.340140         Barrock Gold
-## 68        16.08   GOLD 2020-03-19   2.616465         Barrock Gold
-## 69        15.88   GOLD 2020-03-20   1.340140         Barrock Gold
-## 70        16.93   GOLD 2020-03-23   8.040842         Barrock Gold
-## 71        19.50   GOLD 2020-03-24  24.441608         Barrock Gold
-## 72        19.11   GOLD 2020-03-25  21.952782         Barrock Gold
-## 73        19.58   GOLD 2020-03-26  24.952138         Barrock Gold
-## 74        19.24   GOLD 2020-03-27  22.782387         Barrock Gold
-## 75        19.29   GOLD 2020-03-30  23.101474         Barrock Gold
-## 76        18.32   GOLD 2020-03-31  16.911295         Barrock Gold
-## 77        18.87   GOLD 2020-04-01  20.421193         Barrock Gold
-## 78        19.85   GOLD 2020-04-02  26.675175         Barrock Gold
-## 79        19.95   GOLD 2020-04-03  27.313344         Barrock Gold
-## 80        20.55   GOLD 2020-04-06  31.142304         Barrock Gold
-## 81        20.31   GOLD 2020-04-07  29.610715         Barrock Gold
-## 82        20.41   GOLD 2020-04-08  30.248883         Barrock Gold
-## 83        22.51   GOLD 2020-04-09  43.650287         Barrock Gold
-## 84        22.51   GOLD 2020-04-09  43.650287         Barrock Gold
-## 85       102.52    DIS 2020-03-13   0.000000               Disney
-## 86        95.01    DIS 2020-03-16  -7.325395               Disney
-## 87        93.53    DIS 2020-03-17  -8.769019               Disney
-## 88        88.80    DIS 2020-03-18 -13.382749               Disney
-## 89        94.93    DIS 2020-03-19  -7.403431               Disney
-## 90        85.98    DIS 2020-03-20 -16.133432               Disney
-## 91        85.76    DIS 2020-03-23 -16.348025               Disney
-## 92        98.12    DIS 2020-03-24  -4.291840               Disney
-## 93       100.73    DIS 2020-03-25  -1.745995               Disney
-## 94       105.36    DIS 2020-03-26   2.770195               Disney
-## 95        96.40    DIS 2020-03-27  -5.969562               Disney
-## 96        99.80    DIS 2020-03-30  -2.653135               Disney
-## 97        96.60    DIS 2020-03-31  -5.774482               Disney
-## 98        94.92    DIS 2020-04-01  -7.413187               Disney
-## 99        96.97    DIS 2020-04-02  -5.413574               Disney
-## 100       93.88    DIS 2020-04-03  -8.427624               Disney
-## 101       99.58    DIS 2020-04-06  -2.867728               Disney
-## 102      101.24    DIS 2020-04-07  -1.248536               Disney
-## 103      101.07    DIS 2020-04-08  -1.414355               Disney
-## 104      104.50    DIS 2020-04-09   1.931333               Disney
-## 105      104.50    DIS 2020-04-09   1.931333               Disney
-## 106       17.58    CCL 2020-03-13   0.000000 Carnival Cruise line
-## 107       14.57    CCL 2020-03-16 -17.121729 Carnival Cruise line
-## 108       12.71    CCL 2020-03-17 -27.701934 Carnival Cruise line
-## 109        9.30    CCL 2020-03-18 -47.098976 Carnival Cruise line
-## 110       10.00    CCL 2020-03-19 -43.117179 Carnival Cruise line
-## 111       12.00    CCL 2020-03-20 -31.740614 Carnival Cruise line
-## 112       12.00    CCL 2020-03-23 -31.740614 Carnival Cruise line
-## 113       13.68    CCL 2020-03-24 -22.184300 Carnival Cruise line
-## 114       15.55    CCL 2020-03-25 -11.547213 Carnival Cruise line
-## 115       17.82    CCL 2020-03-26   1.365188 Carnival Cruise line
-## 116       14.41    CCL 2020-03-27 -18.031854 Carnival Cruise line
-## 117       12.80    CCL 2020-03-30 -27.189989 Carnival Cruise line
-## 118       13.17    CCL 2020-03-31 -25.085324 Carnival Cruise line
-## 119        8.80    CCL 2020-04-01 -49.943117 Carnival Cruise line
-## 120        7.97    CCL 2020-04-02 -54.664391 Carnival Cruise line
-## 121        8.49    CCL 2020-04-03 -51.706485 Carnival Cruise line
-## 122       10.21    CCL 2020-04-06 -41.922639 Carnival Cruise line
-## 123       11.30    CCL 2020-04-07 -35.722412 Carnival Cruise line
-## 124       11.99    CCL 2020-04-08 -31.797497 Carnival Cruise line
-## 125       12.42    CCL 2020-04-09 -29.351536 Carnival Cruise line
-## 126       12.42    CCL 2020-04-09 -29.351536 Carnival Cruise line
-## 127       65.32    DRI 2020-03-13   0.000000    Darden Restaurant
-## 128       49.21    DRI 2020-03-16 -24.663198    Darden Restaurant
-## 129       41.93    DRI 2020-03-17 -35.808328    Darden Restaurant
-## 130       34.16    DRI 2020-03-18 -47.703613    Darden Restaurant
-## 131       42.42    DRI 2020-03-19 -35.058178    Darden Restaurant
-## 132       39.00    DRI 2020-03-20 -40.293938    Darden Restaurant
-## 133       41.03    DRI 2020-03-23 -37.186162    Darden Restaurant
-## 134       53.89    DRI 2020-03-24 -17.498471    Darden Restaurant
-## 135       58.45    DRI 2020-03-25 -10.517451    Darden Restaurant
-## 136       60.56    DRI 2020-03-26  -7.287200    Darden Restaurant
-## 137       54.66    DRI 2020-03-27 -16.319657    Darden Restaurant
-## 138       56.85    DRI 2020-03-30 -12.966935    Darden Restaurant
-## 139       54.46    DRI 2020-03-31 -16.625844    Darden Restaurant
-## 140       46.02    DRI 2020-04-01 -29.546846    Darden Restaurant
-## 141       44.31    DRI 2020-04-02 -32.164726    Darden Restaurant
-## 142       45.48    DRI 2020-04-03 -30.373546    Darden Restaurant
-## 143       52.40    DRI 2020-04-06 -19.779544    Darden Restaurant
-## 144       58.96    DRI 2020-04-07  -9.736682    Darden Restaurant
-## 145       63.57    DRI 2020-04-08  -2.679118    Darden Restaurant
-## 146       64.34    DRI 2020-04-09  -1.500312    Darden Restaurant
-## 147       64.34    DRI 2020-04-09  -1.500312    Darden Restaurant
-## 148      122.23    DRI 2020-02-11  87.124928    Darden Restaurant
-## 149      122.45    DRI 2020-02-12  87.461722    Darden Restaurant
-## 150      122.27    DRI 2020-02-13  87.186156    Darden Restaurant
-## 151      121.71    DRI 2020-02-14  86.328841    Darden Restaurant
-## 152      120.49    DRI 2020-02-18  84.461111    Darden Restaurant
-## 153      120.68    DRI 2020-02-19  84.751990    Darden Restaurant
-## 154      120.68    DRI 2020-02-20  84.751990    Darden Restaurant
-## 155      121.10    DRI 2020-02-21  85.394976    Darden Restaurant
-## 156      117.89    DRI 2020-02-24  80.480709    Darden Restaurant
-## 157      111.75    DRI 2020-02-25  71.080833    Darden Restaurant
-## 158      107.07    DRI 2020-02-26  63.916105    Darden Restaurant
-## 159       99.36    DRI 2020-02-27  52.112678    Darden Restaurant
-## 160       97.50    DRI 2020-02-28  49.265156    Darden Restaurant
-## 161       98.80    DRI 2020-03-02  51.255363    Darden Restaurant
-## 162       95.31    DRI 2020-03-03  45.912428    Darden Restaurant
-## 163       95.06    DRI 2020-03-04  45.529697    Darden Restaurant
-## 164       87.95    DRI 2020-03-05  34.644821    Darden Restaurant
-## 165       88.15    DRI 2020-03-06  34.951013    Darden Restaurant
-## 166       77.43    DRI 2020-03-09  18.539498    Darden Restaurant
-## 167       82.60    DRI 2020-03-10  26.454375    Darden Restaurant
-## 168       70.21    DRI 2020-03-11   7.486220    Darden Restaurant
-## 169       59.17    DRI 2020-03-12  -9.415190    Darden Restaurant
-## 170       65.32    DRI 2020-03-13   0.000000    Darden Restaurant
-## 171       49.21    DRI 2020-03-16 -24.663198    Darden Restaurant
-## 172       41.93    DRI 2020-03-17 -35.808328    Darden Restaurant
-## 173       34.16    DRI 2020-03-18 -47.703613    Darden Restaurant
-## 174       42.42    DRI 2020-03-19 -35.058178    Darden Restaurant
-## 175       39.00    DRI 2020-03-20 -40.293938    Darden Restaurant
-## 176       41.03    DRI 2020-03-23 -37.186162    Darden Restaurant
-## 177       53.89    DRI 2020-03-24 -17.498471    Darden Restaurant
-## 178       58.45    DRI 2020-03-25 -10.517451    Darden Restaurant
-## 179       60.56    DRI 2020-03-26  -7.287200    Darden Restaurant
-## 180       54.66    DRI 2020-03-27 -16.319657    Darden Restaurant
-## 181       56.85    DRI 2020-03-30 -12.966935    Darden Restaurant
-## 182       54.46    DRI 2020-03-31 -16.625844    Darden Restaurant
-## 183       46.02    DRI 2020-04-01 -29.546846    Darden Restaurant
-## 184       44.31    DRI 2020-04-02 -32.164726    Darden Restaurant
-## 185       45.48    DRI 2020-04-03 -30.373546    Darden Restaurant
-## 186       52.40    DRI 2020-04-06 -19.779544    Darden Restaurant
-## 187       58.96    DRI 2020-04-07  -9.736682    Darden Restaurant
-## 188       63.57    DRI 2020-04-08  -2.679118    Darden Restaurant
-## 189       64.34    DRI 2020-04-09  -1.500312    Darden Restaurant
-## 190       64.34    DRI 2020-04-09  -1.500312    Darden Restaurant
-## 191        7.69    ZUO 2020-03-13   0.000000                ZUORA
-## 192        7.19    ZUO 2020-03-16  -6.501951                ZUORA
-## 193        7.89    ZUO 2020-03-17   2.600780                ZUORA
-## 194        8.72    ZUO 2020-03-18  13.394018                ZUORA
-## 195        8.40    ZUO 2020-03-19   9.232770                ZUORA
-## 196        8.10    ZUO 2020-03-20   5.331599                ZUORA
-## 197        8.01    ZUO 2020-03-23   4.161248                ZUORA
-## 198        8.50    ZUO 2020-03-24  10.533160                ZUORA
-## 199        8.45    ZUO 2020-03-25   9.882965                ZUORA
-## 200        9.02    ZUO 2020-03-26  17.295189                ZUORA
-##  [ reached &#39;max&#39; / getOption(&quot;max.print&quot;) -- omitted 74 rows ]</code></pre>
+##  1 AAPL   yahoo OK                     41                1 KEEP            
+##  2 NFLX   yahoo OK                     41                1 KEEP            
+##  3 SPY    yahoo OK                     41                1 KEEP            
+##  4 GOLD   yahoo OK                     41                1 KEEP            
+##  5 DIS    yahoo OK                     41                1 KEEP            
+##  6 CCL    yahoo OK                     41                1 KEEP            
+##  7 DRI    yahoo OK                     41                1 KEEP            
+##  8 ZUO    yahoo OK                     41                1 KEEP            
+##  9 AAL    yahoo OK                     41                1 KEEP            
+## 10 LULU   yahoo OK                     41                1 KEEP            
+## 11 DRI    yahoo OK                     41                1 KEEP            
+## 12 ZM     yahoo OK                     41                1 KEEP</code></pre>
+<pre><code>##     price.close ticker   ref.date   rel_change            stockname
+## 1        275.03   AAPL 2020-04-23   0.00000000                Apple
+## 2        282.97   AAPL 2020-04-24   2.88695852                Apple
+## 3        283.17   AAPL 2020-04-27   2.95968223                Apple
+## 4        278.58   AAPL 2020-04-28   1.29076392                Apple
+## 5        287.73   AAPL 2020-04-29   4.61768245                Apple
+## 6        293.80   AAPL 2020-04-30   6.82470606                Apple
+## 7        289.07   AAPL 2020-05-01   5.10490057                Apple
+## 8        293.16   AAPL 2020-05-04   6.59200999                Apple
+## 9        297.56   AAPL 2020-05-05   8.19183328                Apple
+## 10       300.63   AAPL 2020-05-06   9.30807770                Apple
+## 11       303.74   AAPL 2020-05-07  10.43885798                Apple
+## 12       310.13   AAPL 2020-05-08  12.76224635                Apple
+## 13       315.01   AAPL 2020-05-11  14.53660006                Apple
+## 14       311.41   AAPL 2020-05-12  13.22764976                Apple
+## 15       307.65   AAPL 2020-05-13  11.86052253                Apple
+## 16       309.54   AAPL 2020-05-14  12.54772575                Apple
+## 17       307.71   AAPL 2020-05-15  11.88233724                Apple
+## 18       314.96   AAPL 2020-05-18  14.51841332                Apple
+## 19       313.14   AAPL 2020-05-19  13.85667605                Apple
+## 20       426.70   NFLX 2020-04-23   0.00000000              Netflix
+## 21       424.99   NFLX 2020-04-24  -0.40075509              Netflix
+## 22       421.38   NFLX 2020-04-27  -1.24677920              Netflix
+## 23       403.83   NFLX 2020-04-28  -5.35974323              Netflix
+## 24       411.89   NFLX 2020-04-29  -3.47082179              Netflix
+## 25       419.85   NFLX 2020-04-30  -1.60534469              Netflix
+## 26       415.27   NFLX 2020-05-01  -2.67870229              Netflix
+## 27       428.15   NFLX 2020-05-04   0.33981297              Netflix
+## 28       424.68   NFLX 2020-05-05  -0.47340496              Netflix
+## 29       434.26   NFLX 2020-05-06   1.77173606              Netflix
+## 30       436.53   NFLX 2020-05-07   2.30372316              Netflix
+## 31       435.55   NFLX 2020-05-08   2.07405103              Netflix
+## 32       440.52   NFLX 2020-05-11   3.23880399              Netflix
+## 33       431.82   NFLX 2020-05-12   1.19990505              Netflix
+## 34       438.27   NFLX 2020-05-13   2.71150145              Netflix
+## 35       441.95   NFLX 2020-05-14   3.57393944              Netflix
+## 36       454.19   NFLX 2020-05-15   6.44246291              Netflix
+## 37       452.58   NFLX 2020-05-18   6.06514513              Netflix
+## 38       451.04   NFLX 2020-05-19   5.70424099              Netflix
+## 39       279.08    SPY 2020-04-23   0.00000000            SP500 ETF
+## 40       282.97    SPY 2020-04-24   1.39387064            SP500 ETF
+## 41       287.05    SPY 2020-04-27   2.85581244            SP500 ETF
+## 42       285.73    SPY 2020-04-28   2.38283801            SP500 ETF
+## 43       293.21    SPY 2020-04-29   5.06306602            SP500 ETF
+## 44       290.48    SPY 2020-04-30   4.08485901            SP500 ETF
+## 45       282.79    SPY 2020-05-01   1.32937587            SP500 ETF
+## 46       283.57    SPY 2020-05-04   1.60886492            SP500 ETF
+## 47       286.19    SPY 2020-05-05   2.54766208            SP500 ETF
+## 48       284.25    SPY 2020-05-06   1.85252015            SP500 ETF
+## 49       287.68    SPY 2020-05-07   3.08155597            SP500 ETF
+## 50       292.44    SPY 2020-05-08   4.78716340            SP500 ETF
+## 51       292.50    SPY 2020-05-11   4.80866190            SP500 ETF
+## 52       286.67    SPY 2020-05-12   2.71965972            SP500 ETF
+## 53       281.60    SPY 2020-05-13   0.90297374            SP500 ETF
+## 54       284.97    SPY 2020-05-14   2.11051106            SP500 ETF
+## 55       286.28    SPY 2020-05-15   2.57990982            SP500 ETF
+## 56       295.00    SPY 2020-05-18   5.70446243            SP500 ETF
+## 57       291.97    SPY 2020-05-19   4.61875254            SP500 ETF
+## 58        26.74   GOLD 2020-04-23   0.00000000         Barrock Gold
+## 59        27.10   GOLD 2020-04-24   1.34629768         Barrock Gold
+## 60        26.93   GOLD 2020-04-27   0.71054600         Barrock Gold
+## 61        26.96   GOLD 2020-04-28   0.82273373         Barrock Gold
+## 62        26.55   GOLD 2020-04-29  -0.71054974         Barrock Gold
+## 63        25.72   GOLD 2020-04-30  -3.81451384         Barrock Gold
+## 64        26.93   GOLD 2020-05-01   0.71054600         Barrock Gold
+## 65        27.38   GOLD 2020-05-04   2.39341436         Barrock Gold
+## 66        28.19   GOLD 2020-05-05   5.42259162         Barrock Gold
+## 67        26.56   GOLD 2020-05-06  -0.67315258         Barrock Gold
+## 68        27.26   GOLD 2020-05-07   1.94465221         Barrock Gold
+## 69        27.39   GOLD 2020-05-08   2.43081152         Barrock Gold
+## 70        26.02   GOLD 2020-05-11  -2.69259536         Barrock Gold
+## 71        26.04   GOLD 2020-05-12  -2.61779731         Barrock Gold
+## 72        26.12   GOLD 2020-05-13  -2.31862004         Barrock Gold
+## 73        27.14   GOLD 2020-05-14   1.49588257         Barrock Gold
+## 74        28.04   GOLD 2020-05-15   4.86163426         Barrock Gold
+## 75        27.20   GOLD 2020-05-18   1.72027300         Barrock Gold
+## 76        28.10   GOLD 2020-05-19   5.08601346         Barrock Gold
+## 77       101.00    DIS 2020-04-23   0.00000000               Disney
+## 78       101.19    DIS 2020-04-24   0.18812079               Disney
+## 79       106.06    DIS 2020-04-27   5.00989901               Disney
+## 80       106.21    DIS 2020-04-28   5.15841485               Disney
+## 81       112.25    DIS 2020-04-29  11.13861386               Disney
+## 82       108.15    DIS 2020-04-30   7.07920990               Disney
+## 83       105.50    DIS 2020-05-01   4.45544554               Disney
+## 84       103.18    DIS 2020-05-04   2.15841584               Disney
+## 85       101.06    DIS 2020-05-05   0.05940396               Disney
+## 86       100.88    DIS 2020-05-06  -0.11881485               Disney
+## 87       105.57    DIS 2020-05-07   4.52475248               Disney
+## 88       109.16    DIS 2020-05-08   8.07921188               Disney
+## 89       107.77    DIS 2020-05-11   6.70296733               Disney
+## 90       104.56    DIS 2020-05-12   3.52475050               Disney
+## 91       102.92    DIS 2020-05-13   1.90098812               Disney
+## 92       105.91    DIS 2020-05-14   4.86139010               Disney
+## 93       109.05    DIS 2020-05-15   7.97030000               Disney
+## 94       116.85    DIS 2020-05-18  15.69306733               Disney
+## 95       114.37    DIS 2020-05-19  13.23762673               Disney
+## 96        12.17    CCL 2020-04-23   0.00000000 Carnival Cruise line
+## 97        11.91    CCL 2020-04-24  -2.13640099 Carnival Cruise line
+## 98        12.98    CCL 2020-04-27   6.65571076 Carnival Cruise line
+## 99        14.46    CCL 2020-04-28  18.81676253 Carnival Cruise line
+## 100       16.69    CCL 2020-04-29  37.14051767 Carnival Cruise line
+## 101       15.90    CCL 2020-04-30  30.64913722 Carnival Cruise line
+## 102       13.93    CCL 2020-05-01  14.46179129 Carnival Cruise line
+## 103       14.34    CCL 2020-05-04  17.83073131 Carnival Cruise line
+## 104       13.09    CCL 2020-05-05   7.55957272 Carnival Cruise line
+## 105       12.82    CCL 2020-05-06   5.34100247 Carnival Cruise line
+## 106       13.53    CCL 2020-05-07  11.17502054 Carnival Cruise line
+## 107       14.21    CCL 2020-05-08  16.76253081 Carnival Cruise line
+## 108       13.85    CCL 2020-05-11  13.80443714 Carnival Cruise line
+## 109       13.19    CCL 2020-05-12   8.38126541 Carnival Cruise line
+## 110       12.26    CCL 2020-05-13   0.73952342 Carnival Cruise line
+## 111       12.27    CCL 2020-05-14   0.82169269 Carnival Cruise line
+## 112       12.78    CCL 2020-05-15   5.01232539 Carnival Cruise line
+## 113       14.72    CCL 2020-05-18  20.95316352 Carnival Cruise line
+## 114       14.11    CCL 2020-05-19  15.94083813 Carnival Cruise line
+## 115       66.87    DRI 2020-04-23   0.00000000    Darden Restaurant
+## 116       68.82    DRI 2020-04-24   2.91610126    Darden Restaurant
+## 117       72.40    DRI 2020-04-27   8.26977531    Darden Restaurant
+## 118       74.80    DRI 2020-04-28  11.85883003    Darden Restaurant
+## 119       78.21    DRI 2020-04-29  16.95827051    Darden Restaurant
+## 120       73.79    DRI 2020-04-30  10.34843381    Darden Restaurant
+## 121       69.85    DRI 2020-05-01   4.45640028    Darden Restaurant
+## 122       70.62    DRI 2020-05-04   5.60789567    Darden Restaurant
+## 123       68.99    DRI 2020-05-05   3.17032287    Darden Restaurant
+## 124       68.21    DRI 2020-05-06   2.00388207    Darden Restaurant
+## 125       70.53    DRI 2020-05-07   5.47330019    Darden Restaurant
+## 126       74.72    DRI 2020-05-08  11.73919194    Darden Restaurant
+## 127       73.93    DRI 2020-05-11  10.55779375    Darden Restaurant
+## 128       70.32    DRI 2020-05-12   5.15925953    Darden Restaurant
+## 129       65.88    DRI 2020-05-13  -1.48049343    Darden Restaurant
+## 130       66.66    DRI 2020-05-14  -0.31404066    Darden Restaurant
+## 131       69.61    DRI 2020-05-15   4.09749944    Darden Restaurant
+## 132       75.45    DRI 2020-05-18  12.83085631    Darden Restaurant
+## 133       75.82    DRI 2020-05-19  13.38417317    Darden Restaurant
+## 134       41.03    DRI 2020-03-23 -38.64214572    Darden Restaurant
+## 135       53.89    DRI 2020-03-24 -19.41080218    Darden Restaurant
+## 136       58.45    DRI 2020-03-25 -12.59159806    Darden Restaurant
+## 137       60.56    DRI 2020-03-26  -9.43622210    Darden Restaurant
+## 138       54.66    DRI 2020-03-27 -18.25931277    Darden Restaurant
+## 139       56.85    DRI 2020-03-30 -14.98430470    Darden Restaurant
+## 140       54.46    DRI 2020-03-31 -18.55840204    Darden Restaurant
+## 141       46.02    DRI 2020-04-01 -31.17990439    Darden Restaurant
+## 142       44.31    DRI 2020-04-02 -33.73710332    Darden Restaurant
+## 143       45.48    DRI 2020-04-03 -31.98744136    Darden Restaurant
+## 144       52.40    DRI 2020-04-06 -21.63900157    Darden Restaurant
+## 145       58.96    DRI 2020-04-07 -11.82892724    Darden Restaurant
+## 146       63.57    DRI 2020-04-08  -4.93495267    Darden Restaurant
+## 147       64.34    DRI 2020-04-09  -3.78347074    Darden Restaurant
+## 148       60.89    DRI 2020-04-13  -8.94273027    Darden Restaurant
+## 149       61.15    DRI 2020-04-14  -8.55391168    Darden Restaurant
+## 150       58.79    DRI 2020-04-15 -12.08314885    Darden Restaurant
+## 151       57.98    DRI 2020-04-16 -13.29445581    Darden Restaurant
+## 152       63.35    DRI 2020-04-17  -5.26395221    Darden Restaurant
+## 153       61.79    DRI 2020-04-20  -7.59683232    Darden Restaurant
+## 154       63.32    DRI 2020-04-21  -5.30881238    Darden Restaurant
+## 155       68.30    DRI 2020-04-22   2.13847755    Darden Restaurant
+## 156       66.87    DRI 2020-04-23   0.00000000    Darden Restaurant
+## 157       68.82    DRI 2020-04-24   2.91610126    Darden Restaurant
+## 158       72.40    DRI 2020-04-27   8.26977531    Darden Restaurant
+## 159       74.80    DRI 2020-04-28  11.85883003    Darden Restaurant
+## 160       78.21    DRI 2020-04-29  16.95827051    Darden Restaurant
+## 161       73.79    DRI 2020-04-30  10.34843381    Darden Restaurant
+## 162       69.85    DRI 2020-05-01   4.45640028    Darden Restaurant
+## 163       70.62    DRI 2020-05-04   5.60789567    Darden Restaurant
+## 164       68.99    DRI 2020-05-05   3.17032287    Darden Restaurant
+## 165       68.21    DRI 2020-05-06   2.00388207    Darden Restaurant
+## 166       70.53    DRI 2020-05-07   5.47330019    Darden Restaurant
+## 167       74.72    DRI 2020-05-08  11.73919194    Darden Restaurant
+## 168       73.93    DRI 2020-05-11  10.55779375    Darden Restaurant
+## 169       70.32    DRI 2020-05-12   5.15925953    Darden Restaurant
+## 170       65.88    DRI 2020-05-13  -1.48049343    Darden Restaurant
+## 171       66.66    DRI 2020-05-14  -0.31404066    Darden Restaurant
+## 172       69.61    DRI 2020-05-15   4.09749944    Darden Restaurant
+## 173       75.45    DRI 2020-05-18  12.83085631    Darden Restaurant
+## 174       75.82    DRI 2020-05-19  13.38417317    Darden Restaurant
+## 175        9.57    ZUO 2020-04-23   0.00000000                ZUORA
+## 176        9.66    ZUO 2020-04-24   0.94043887                ZUORA
+## 177       10.37    ZUO 2020-04-27   8.35945664                ZUORA
+## 178       10.43    ZUO 2020-04-28   8.98641588                ZUORA
+## 179       10.89    ZUO 2020-04-29  13.79310345                ZUORA
+## 180       10.57    ZUO 2020-04-30  10.44932079                ZUORA
+## 181       10.23    ZUO 2020-05-01   6.89655172                ZUORA
+## 182       10.21    ZUO 2020-05-04   6.68756531                ZUORA
+## 183       10.03    ZUO 2020-05-05   4.80668757                ZUORA
+## 184       10.46    ZUO 2020-05-06   9.29989551                ZUORA
+## 185       10.99    ZUO 2020-05-07  14.83803553                ZUORA
+## 186       11.26    ZUO 2020-05-08  17.65935214                ZUORA
+## 187       11.53    ZUO 2020-05-11  20.48066876                ZUORA
+## 188       11.49    ZUO 2020-05-12  20.06269592                ZUORA
+## 189       10.82    ZUO 2020-05-13  13.06165099                ZUORA
+## 190       10.30    ZUO 2020-05-14   7.62800418                ZUORA
+## 191       10.58    ZUO 2020-05-15  10.55381400                ZUORA
+## 192       10.85    ZUO 2020-05-18  13.37513062                ZUORA
+## 193       10.87    ZUO 2020-05-19  13.58411703                ZUORA
+## 194       10.25    AAL 2020-04-23   0.00000000    American Airlines
+## 195       10.31    AAL 2020-04-24   0.58536585    American Airlines
+## 196       10.02    AAL 2020-04-27  -2.24390244    American Airlines
+## 197       11.26    AAL 2020-04-28   9.85365854    American Airlines
+## 198       12.63    AAL 2020-04-29  23.21951220    American Airlines
+## 199       12.01    AAL 2020-04-30  17.17073171    American Airlines
+## 200       10.64    AAL 2020-05-01   3.80487805    American Airlines
+##  [ reached &#39;max&#39; / getOption(&quot;max.print&quot;) -- omitted 50 rows ]</code></pre>
 <p><img src="covid_files/figure-html/plotbox-1.png" width="672" /></p>
 
 

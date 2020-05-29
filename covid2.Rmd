@@ -265,3 +265,24 @@ my_gg2 <- p11 + geom_line_interactive(aes(tooltip = category), size = 0.5)
 ```{r plotbox3, echo=FALSE,warning = FALSE}
 girafe(code = print(my_gg2) )
 ```
+
+
+
+```{r box4, echo=FALSE,warning = FALSE,include=FALSE}
+setwd('~/Google Drive/algotrading/robinhood')
+RH_fund500 <- read.csv("RH_fund5002020-05-29.csv")
+library(ggplot2)
+library(ggiraph)
+RH_fun <-ggplot()+
+  geom_point_interactive(data=RH_fund500,aes(x=pb_ratio,y=pe_ratio, color=sector,tooltip = symbol,size=dividend_yield),alpha=0.2)+
+  xlim(c(0,2))+
+  ylim(c(0,100))+
+  ggtitle('PB vs.PE ratio of S&P 500 stocks')
+  #ggrepel::geom_text_repel(data = RH_fund500,aes(x=pb_ratio,y=pe_ratio,label=sector))
+
+```
+
+
+```{r plotbox4, echo=FALSE,warning = FALSE}
+girafe(code = print(RH_fun) )
+```
